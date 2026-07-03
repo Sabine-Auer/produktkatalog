@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Produktdetails{% endblock %}
+
+{% block body %}
+    <main>
+        <a href="{{ path('app_product_index') }}">Zurück zu den Produkten</a>
+
+        <h2>{{ product.name }}</h2>
+        
+        <p>
+           {{ product.price }} - {{ product.category }}
+        </p>
+
+        <p>
+            {{ product.description }}
+        </p>
+    </main>
+{% endblock %}
