@@ -1,56 +1,109 @@
 body {
+    margin: 0;
+    padding: 5rem;
+    background: #f7f4eb;
+    color: #3f4c37;
     font-family: Arial, sans-serif;
-    max-width: 55rem;
-    margin: 0 auto;
-    padding: 1.5rem;
 }
 
 header {
     display: flex;
     gap: 1rem;
     margin-bottom: 2rem;
+    padding: 1rem;
+    background: #e7ead8;
+    border-radius: 1rem;
+}
+
+svg {
+    width: 5rem;
 }
 
 a {
-    text-decoration: none;
-    color: #45ab0a;
+    display: flex;
+    color: #3f4c37;
     font-weight: bold;
+    text-decoration: none;
+    align-items: center;
 }
+
+a:hover {
+    color: #b86e4b;
+}
+
+/* Homepage */
+
+.hero {
+    padding: 3rem;
+    background: #e7ead8;
+    border-radius: 1.5rem;
+}
+
+.eyebrow {
+    color: #7a5c3d;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.15rem;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    line-height: 1.1;
+}
+
+.hero p {
+    max-width: 38rem;
+    line-height: 1.6;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8rem 1.2rem;
+    background: #b86e4b;
+    border-radius: 1rem;
+    color: white;
+}
+
+.button:hover {
+    background: #9e5638;
+    color: white;
+}
+
+/* Produkte */
 
 .product-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     gap: 1rem;
-    list-style: none;
     padding: 0;
+    list-style: none;
 }
 
 .product-card {
-    margin: 0;
-    padding: 1.5rem;
-
-    border: 2px solid #ccc;
-    border-radius: 0.5rem;
+    padding: 1.25rem;
+    background: white;
+    border: 0.125rem solid #d2c6a8;
+    border-radius: 1rem;
 }
 
 .product-card h2 {
-    text-decoration: none;
-
+    min-height: 2.8em;
     margin-top: 0;
-    min-height: 2.5rem;
-    line-height: 1rem;
-    font-size: 1.25rem;
+    font-size: 1.3rem;
+    line-height: 1.4;
 }
 
 .product-card p {
-   margin: 0.5rem;
+    color: #68735f;
+    line-height: 1.5;
 }
 
 .product-card img {
     display: block;
     width: 100%;
-    
+    aspect-ratio: 4 / 3;
     object-fit: cover;
-    border-radius: 0.5rem;
+    border-radius: 0.75rem;
 }
-
